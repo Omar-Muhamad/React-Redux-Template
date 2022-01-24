@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <section className="hero">
       <h1>React Redux Template</h1>
-      <button type="button" onClick={() => dispatch(increament)}>+</button>
+      <button type="button" onClick={() => dispatch(increament())}>+</button>
       <p>{counter}</p>
-      <button type="button" onClick={() => dispatch(decreament)}>-</button>
+      <button type="button" onClick={() => dispatch(decreament())}>-</button>
     </section>
   );
 };
