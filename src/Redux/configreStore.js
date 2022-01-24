@@ -3,12 +3,12 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import featureReducer from './feature/feature';
+import counterReducer from './counter/counter';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const reducers = combineReducers({
-  reducerName: featureReducer,
+  counter: counterReducer,
 });
 
 const store = createStore(
